@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <style>
+
+        * {
+        margin:0;
+        box-sizing: border-box;
+        }
+
+        body {      
+            background-color: #b3d7e5 ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height:100vh;
+        }
+
+        div {
+            margin: auto;
+            width: 300px;
+            background-color: #EEEFF1;
+            border-radius: 5px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .in {
+            margin-bottom: 10px;
+        }
+
+        #btn {
+            background-color: rgb(127, 184, 207);
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        #btn2 {
+            background-color: rgb(127, 184, 207);
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: #9B9B9B;
+            font-size: 12px;
+        }
+        .email_chk {
+            display: flex;
+            width: 200px;
+            padding: 10px;
+        }
+        #remember-check{
+            width: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="/index.html">
+            <input type="text" placeholder="이메일" class="in" required >
+            <input type="password" placeholder="비밀번호" class="in" required>
+            <div class="email_chk">
+                <input type="checkbox" id="remember-check">
+                <label for="remember-check">이메일 기억하기</label>
+            </div>
+                
+            <input type="submit" id="btn" value="로그인">
+            <a href="/main/joinning.html"><input type="button" id="btn2" value="회원가입"></a>
+        </form>
+        <a href="#none">비밀번호를 잊어버리셨나요?</a>
+        <p><a href="/main/joinning.html">계정이 없으신가요?</a></p>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Joining Form</title>
+    <style>
+
+        * {
+        margin:0;
+        box-sizing: border-box;
+        }
+
+        body {      
+            background-color:  #b3d7e5  ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height:100vh;
+        }
+
+        div {
+            margin: auto;
+            width: 300px;
+            background-color: #EEEFF1;
+            border-radius: 5px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .in {
+            margin-bottom: 10px;
+        }
+
+        #btn {
+            background-color:   rgb(127, 184, 207);
+            margin-bottom: 30px;
+            color: white;
+        }
+
+  
+
+        a {
+            text-decoration: none;
+            color: #9B9B9B;
+            font-size: 12px;
+        }
+        .email_chk {
+            display: flex;
+            width: 200px;
+            padding: 10px;
+        }
+        #remember-check{
+            width: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="/main/joinging_completed.html">
+            <input type="text" placeholder="이름" class="in" required >
+            <input type="email" placeholder="이메일@example.com" class="in" required >
+            <input type="password" id="pwd1" placeholder="비밀번호" class="in" required >
+            <input type="password" id="pwd2"      placeholder="비밀번호 확인" class="in" required>
+      
+
+
+
+
+
+
+
+            
+                
+            <a href="/main/joinging_completed.html"><input type="submit" id="btn" value="가입하기"></a>
+            
+        </form>
+     
+    
+</body>
+
+</html>
